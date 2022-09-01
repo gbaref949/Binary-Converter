@@ -1,20 +1,10 @@
-function binary(){
-    let num = 1025;
-    let remainder;
-    if(num%2 == 1){
-        remainder = 1;
-        num = num - 1
-    }
-    let list = [];
-    let n = -1;
-    for(let i = 0; i<12; i++){
-     n = n + 1;
-     let div = 1*(2**n);
-     if(num/div == 1){
-        console.log(div);
-        console.log(remainder);
-     }
- }
-}
+let number1 = parseInt(prompt("Enter a decimal number"));
+// prompts for a number
 
-binary();
+let result1 = number1.toString(2);
+alert("Binary" + result1);
+// converts number into a string in base 2
+
+let result2 = number1.toString(16);
+alert("Binary" + result2);
+// converts number into a string in base 16
